@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230629 20:41:46.632" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Tagging" source="C:\Users\Admin\PycharmProjects\Robotautomation\Data_driven_testcase\Tagging.robot">
+<test id="s1-s1-t1" name="TC 1 User registration test" line="6">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user reg test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.717" endtime="20230629 20:41:46.718"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>user reg test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.719" endtime="20230629 20:41:46.719"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230629 20:41:46.716" endtime="20230629 20:41:46.720"/>
+</test>
+<test id="s1-s1-t2" name="TC 2 login test" line="11">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is login test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.721" endtime="20230629 20:41:46.724"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>login test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.725" endtime="20230629 20:41:46.725"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20230629 20:41:46.720" endtime="20230629 20:41:46.726"/>
+</test>
+<test id="s1-s1-t3" name="TC 3 change user setting" line="16">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is changing user setting test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.728" endtime="20230629 20:41:46.729"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>user setting test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.729" endtime="20230629 20:41:46.730"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20230629 20:41:46.727" endtime="20230629 20:41:46.730"/>
+</test>
+<test id="s1-s1-t4" name="TC 3 logout test" line="21">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is logout test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.732" endtime="20230629 20:41:46.732"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>logout test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230629 20:41:46.733" endtime="20230629 20:41:46.733"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230629 20:41:46.731" endtime="20230629 20:41:46.734"/>
+</test>
+<status status="PASS" starttime="20230629 20:41:46.712" endtime="20230629 20:41:46.734"/>
+</suite>
+<status status="PASS" starttime="20230629 20:41:46.659" endtime="20230629 20:41:46.736"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Tagging">Suites.Tagging</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

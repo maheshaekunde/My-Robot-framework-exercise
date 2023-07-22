@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230629 20:41:46.634" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="POMRegistration" source="C:\Users\Admin\PycharmProjects\Robotautomation\Data_driven_testcase\POMRegistration.robot">
+<test id="s1-s1-t1" name="Registration" line="11">
+<kw name="Open my Browser" library="POMregistrationkey">
+<arg>${Url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 20:41:47.209" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<status status="PASS" starttime="20230629 20:41:47.208" endtime="20230629 20:41:56.195"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 20:41:56.196" endtime="20230629 20:41:56.351"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:47.207" endtime="20230629 20:41:56.352"/>
+</kw>
+<kw name="Click on register" library="POMregistrationkey">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_reg}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:56.353" level="INFO">Clicking element '//a[normalize-space()='REGISTER']'.</msg>
+<status status="PASS" starttime="20230629 20:41:56.353" endtime="20230629 20:41:57.759"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:56.352" endtime="20230629 20:41:57.759"/>
+</kw>
+<kw name="Enter Firstname" library="POMregistrationkey">
+<arg>Devid</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstname}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:57.763" level="INFO">Typing text 'Devid' into text field '//input[@name='firstName']'.</msg>
+<status status="PASS" starttime="20230629 20:41:57.762" endtime="20230629 20:41:58.404"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:57.761" endtime="20230629 20:41:58.404"/>
+</kw>
+<kw name="Enter Lastname" library="POMregistrationkey">
+<arg>Scott</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:58.407" level="INFO">Typing text 'Scott' into text field '//input[@name='lastName']'.</msg>
+<status status="PASS" starttime="20230629 20:41:58.406" endtime="20230629 20:41:58.754"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:58.405" endtime="20230629 20:41:58.754"/>
+</kw>
+<kw name="Enter Phone" library="POMregistrationkey">
+<arg>1234567890</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:58.756" level="INFO">Typing text '1234567890' into text field '//input[@name='phone']'.</msg>
+<status status="PASS" starttime="20230629 20:41:58.755" endtime="20230629 20:41:58.978"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:58.754" endtime="20230629 20:41:58.979"/>
+</kw>
+<kw name="Enter Email" library="POMregistrationkey">
+<arg>dev@gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:58.982" level="INFO">Typing text 'dev@gmail.com' into text field '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20230629 20:41:58.980" endtime="20230629 20:41:59.161"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:58.979" endtime="20230629 20:41:59.161"/>
+</kw>
+<kw name="Enter City" library="POMregistrationkey">
+<arg>New York</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:59.164" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20230629 20:41:59.163" endtime="20230629 20:41:59.164"/>
+</kw>
+<status status="FAIL" starttime="20230629 20:41:59.162" endtime="20230629 20:41:59.165"/>
+</kw>
+<kw name="Enter postel code" library="POMregistrationkey">
+<arg>115003</arg>
+<status status="NOT RUN" starttime="20230629 20:41:59.165" endtime="20230629 20:41:59.166"/>
+</kw>
+<kw name="Select Country" library="POMregistrationkey">
+<arg>UNITED STATES</arg>
+<status status="NOT RUN" starttime="20230629 20:41:59.166" endtime="20230629 20:41:59.167"/>
+</kw>
+<kw name="Enter Username" library="POMregistrationkey">
+<arg>Dscott</arg>
+<status status="NOT RUN" starttime="20230629 20:41:59.167" endtime="20230629 20:41:59.168"/>
+</kw>
+<kw name="Enter Password" library="POMregistrationkey">
+<arg>12345</arg>
+<status status="NOT RUN" starttime="20230629 20:41:59.168" endtime="20230629 20:41:59.168"/>
+</kw>
+<kw name="Enter Confirm Pwd" library="POMregistrationkey">
+<arg>12345</arg>
+<status status="NOT RUN" starttime="20230629 20:41:59.169" endtime="20230629 20:41:59.169"/>
+</kw>
+<kw name="Click Signup" library="POMregistrationkey">
+<status status="NOT RUN" starttime="20230629 20:41:59.169" endtime="20230629 20:41:59.170"/>
+</kw>
+<kw name="Verify Sucessful Registration Page" library="POMregistrationkey">
+<status status="NOT RUN" starttime="20230629 20:41:59.170" endtime="20230629 20:41:59.170"/>
+</kw>
+<kw name="Close my browser" library="POMregistrationkey">
+<status status="NOT RUN" starttime="20230629 20:41:59.171" endtime="20230629 20:41:59.171"/>
+</kw>
+<status status="FAIL" starttime="20230629 20:41:47.206" endtime="20230629 20:41:59.172">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20230629 20:41:46.724" endtime="20230629 20:41:59.173"/>
+</suite>
+<status status="FAIL" starttime="20230629 20:41:46.673" endtime="20230629 20:41:59.176"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="POMRegistration">Suites.POMRegistration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

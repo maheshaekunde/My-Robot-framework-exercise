@@ -1,0 +1,9 @@
+datasources:0fcb40ef75f3eb949b2852343c8400b014bf22d0
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:e48b984af0cfd278c10d050d54c52c285eed5806
+--suite Suites.Admin Excel
+--suite Suites.Admin Testcase
+--suite Suites.POMRegistration
+--suite Suites.SetupAndTeardown
+--suite Suites.Tagging

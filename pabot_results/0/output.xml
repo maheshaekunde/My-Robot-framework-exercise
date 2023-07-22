@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230629 20:41:46.598" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Admin Excel" source="C:\Users\Admin\PycharmProjects\Robotautomation\Data_driven_testcase\admin_excel.robot">
+<kw name="Open My Browser" library="admin_resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 20:41:51.926" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20230629 20:41:51.924" endtime="20230629 20:41:57.226"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 20:41:57.226" endtime="20230629 20:41:57.416"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230629 20:41:57.416" endtime="20230629 20:41:57.417"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:51.922" endtime="20230629 20:41:57.417"/>
+</kw>
+<test id="s1-s1-t1" name="Testin By Excel" line="10">
+<kw name="Invalid Inputs">
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Input Username" library="admin_resource">
+<arg>${username}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:41:57.428" endtime="20230629 20:41:59.571"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:41:59.573" level="INFO">Typing text 'admin@yourstore.com' into text field '//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20230629 20:41:59.571" endtime="20230629 20:42:02.762"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:57.424" endtime="20230629 20:42:02.762"/>
+</kw>
+<kw name="Input Password" library="admin_resource">
+<arg>${password}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:42:02.763" endtime="20230629 20:42:04.852"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:04.853" level="INFO">Typing text 'adm' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20230629 20:42:04.852" endtime="20230629 20:42:08.180"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:02.762" endtime="20230629 20:42:08.180"/>
+</kw>
+<kw name="Click to Login" library="admin_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:08.182" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20230629 20:42:08.181" endtime="20230629 20:42:10.635"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:08.180" endtime="20230629 20:42:10.635"/>
+</kw>
+<kw name="Varify Error Message" library="admin_resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230629 20:42:12.690" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20230629 20:42:10.636" endtime="20230629 20:42:12.690"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:10.635" endtime="20230629 20:42:12.690"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:57.422" endtime="20230629 20:42:12.691"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:57.418" endtime="20230629 20:42:12.691"/>
+</test>
+<test id="s1-s1-t2" name="Testin By Excel" line="10">
+<kw name="Invalid Inputs">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Input Username" library="admin_resource">
+<arg>${username}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:42:12.699" endtime="20230629 20:42:14.807"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:14.808" level="INFO">Typing text 'adm@yourstore.com' into text field '//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20230629 20:42:14.807" endtime="20230629 20:42:17.966"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:12.698" endtime="20230629 20:42:17.966"/>
+</kw>
+<kw name="Input Password" library="admin_resource">
+<arg>${password}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:42:17.967" endtime="20230629 20:42:20.012"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:20.013" level="INFO">Typing text 'admin' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20230629 20:42:20.012" endtime="20230629 20:42:23.104"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:17.966" endtime="20230629 20:42:23.104"/>
+</kw>
+<kw name="Click to Login" library="admin_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:23.105" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20230629 20:42:23.105" endtime="20230629 20:42:25.543"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:23.104" endtime="20230629 20:42:25.543"/>
+</kw>
+<kw name="Varify Error Message" library="admin_resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230629 20:42:27.569" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20230629 20:42:25.544" endtime="20230629 20:42:27.569"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:25.544" endtime="20230629 20:42:27.569"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:12.697" endtime="20230629 20:42:27.569"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:12.692" endtime="20230629 20:42:27.570"/>
+</test>
+<test id="s1-s1-t3" name="Testin By Excel" line="10">
+<kw name="Invalid Inputs">
+<arg>adm@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Input Username" library="admin_resource">
+<arg>${username}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:42:27.573" endtime="20230629 20:42:29.633"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:29.634" level="INFO">Typing text 'adm@yourstore.com' into text field '//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20230629 20:42:29.633" endtime="20230629 20:42:32.753"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:27.572" endtime="20230629 20:42:32.753"/>
+</kw>
+<kw name="Input Password" library="admin_resource">
+<arg>${password}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230629 20:42:32.754" endtime="20230629 20:42:34.822"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:34.823" level="INFO">Typing text 'adm' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20230629 20:42:34.822" endtime="20230629 20:42:37.911"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:32.753" endtime="20230629 20:42:37.911"/>
+</kw>
+<kw name="Click to Login" library="admin_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 20:42:37.912" level="INFO">Clicking element '//button[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20230629 20:42:37.912" endtime="20230629 20:42:40.314"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:37.911" endtime="20230629 20:42:40.314"/>
+</kw>
+<kw name="Varify Error Message" library="admin_resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230629 20:42:42.329" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20230629 20:42:40.315" endtime="20230629 20:42:42.329"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:40.314" endtime="20230629 20:42:42.329"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:27.572" endtime="20230629 20:42:42.330"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:27.570" endtime="20230629 20:42:42.330"/>
+</test>
+<kw name="Close My Browser" library="admin_resource" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230629 20:42:42.333" endtime="20230629 20:42:45.476"/>
+</kw>
+<status status="PASS" starttime="20230629 20:42:42.332" endtime="20230629 20:42:45.477"/>
+</kw>
+<status status="PASS" starttime="20230629 20:41:46.648" endtime="20230629 20:42:45.477"/>
+</suite>
+<status status="PASS" starttime="20230629 20:41:46.610" endtime="20230629 20:42:45.480"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Admin Excel">Suites.Admin Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230629 20:42:12.692" level="WARN">Multiple tests with name 'Testin By Excel' executed in suite 'Suites.Admin Excel'.</msg>
+<msg timestamp="20230629 20:42:27.570" level="WARN">Multiple tests with name 'Testin By Excel' executed in suite 'Suites.Admin Excel'.</msg>
+</errors>
+</robot>

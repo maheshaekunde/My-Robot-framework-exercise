@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.POMRegistration                                                        
+==============================================================================
+Registration                                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\Robotautomation\Data_driven_testcase\POMRegistration.robot:11
+    T:  Registration    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\Robotautomation\Data_driven_testcase\POMRegistration.robot:19
+      Enter City    New York
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\Robotautomation\Resources\POMregistrationkey.robot:36
+      Input Text    ${txt_city}
+      |  ${txt_city} = //input[@name='city'] (str)
+______________________________________________________________________________
+| FAIL |
+Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.
+------------------------------------------------------------------------------
+Suites.POMRegistration                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\Robotautomation\pabot_results\2\output.xml
