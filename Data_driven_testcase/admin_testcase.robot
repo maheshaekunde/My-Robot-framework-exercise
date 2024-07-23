@@ -21,3 +21,4 @@ Invalid Inputs
     Input Password                  ${password}
     Click to Login
     Varify Error Message
+    open excel

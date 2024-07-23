@@ -12,7 +12,7 @@ Get All Links test
 
 # creating list by @ and printing all links
 
-    @{Linkitems}    create list
+    @{Linkitems}    create list      ${Alllinkscount}
 
 
     FOR    ${i}     IN RANGE    1   ${Alllinkscount}+1

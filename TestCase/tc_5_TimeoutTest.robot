@@ -12,7 +12,7 @@ Registration test
     open browser    ${url}  ${browser}
     maximize browser window
 
-#waitinng until given text is visible and if text is not availabel it will wait till 5 seconds
+#waitinng until given text is visible and if text is not available it will wait till 5 seconds
 
     # set selenium timeout    10 seconds      #if text is not visible
     #    instead of waiting defult 5 sec it will wait till given time

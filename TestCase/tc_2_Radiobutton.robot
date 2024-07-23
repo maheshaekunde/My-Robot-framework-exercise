@@ -21,7 +21,7 @@ Testing Radio buttons and check boxes
     select radio button    webform  Option 3        # value of name attribute and value of value attribute
 
 #selecting checkbox button
-    select checkbox    checkbox1
+    select checkbox    checkbox1            #Value of value attribute
     select checkbox    checkbox2
     select checkbox    checkbox3
 

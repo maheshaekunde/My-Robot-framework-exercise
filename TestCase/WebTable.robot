@@ -20,3 +20,5 @@ Table Validation
     table cell should contain    xpath://table[@name='BookTable']   5   2   Mukesh              #row, column
 
     table header should contain    xpath://table[@name='BookTable']     BookName
+
+    table

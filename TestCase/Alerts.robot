@@ -1,7 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
 
-
 *** Variables ***
 ${browser}      chrome
 ${url}      https://testautomationpractice.blogspot.com/
@@ -13,22 +12,18 @@ HandlingAlerts
     set selenium speed    2 seconds
     click element    xpath://button[normalize-space()='Confirm Box']
 
-    #to accept alert
+    handle alert    LEAVE
+
+#    #to accept alert
 #    handle alert    accept
-
-    #to cancle alert
+#
+#    #to cancle alert
 #    handle alert    dismiss
-
-    #to keep as it is
+#
+#    #to keep as it is
 #    handle alert    leave
-
-    #Varify text written on alert bar
-    alert should be present    Press a button!
-
-
-
-
-
-
+#
+#    #Varify text written on alert bar
+#    alert should be present    Press a button!
 
 

@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Variables    ../PageObjects/Locators.py
-
+Library     ../custome_keyword/Shop.py
 
 *** Keywords ***
 Open my browser
