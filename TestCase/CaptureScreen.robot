@@ -18,7 +18,7 @@ capture screenshot
 
     sleep    5
 
-    #if location is given then it will save in current project location
+    #if location is not given then it will save in current project location
 
 
 

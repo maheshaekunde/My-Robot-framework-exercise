@@ -25,10 +25,5 @@ HandlingAlerts
     #Varify text written on alert bar
     alert should be present    Press a button!
 
-
-
-
-
-
-
-
+    # enter text and accept it
+    input text into alert    <text>

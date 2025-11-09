@@ -18,3 +18,13 @@ Tabbed windows
     click element    xpath://span[normalize-space()='Projects']
 
     close all browsers
+
+
+#| Keyword              | Description                                  |
+#| -------------------- | -------------------------------------------- |
+#| `Get Window Titles`  | Returns list of all open window titles       |
+#| `Get Window Handles` | Returns internal handles of all open windows |
+#| `Close Window`       | Closes the current active window             |
+#| `Close All Browsers` | Closes all open browser windows              |
+
+

@@ -24,7 +24,14 @@ Multibrowser
     log to console    ${title}
 
 
+#    switch through alias name
+    Open Browser    https://google.com    chrome    alias=Google
+    Open Browser    https://bing.com      edge      alias=Bing
 
+    Switch Browser    Google
+    Log To Console    Now controlling Google browser
 
+    Switch Browser    Bing
+    Log To Console    Now controlling Bing browser
 
 *** Keywords ***

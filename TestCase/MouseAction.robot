@@ -18,15 +18,10 @@ Mouse Action
     maximize browser window
     double click element    xpath://button[normalize-space()='Copy Text']
 
-    #Drag and Drop
+    # Drag And Drop    source_locator    target_locator
     go to    http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
     maximize browser window
     drag and drop    id:box6    id:box106
-
-
-
-
-
 
 *** Keywords ***
 

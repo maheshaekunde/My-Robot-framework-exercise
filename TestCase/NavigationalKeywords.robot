@@ -23,6 +23,9 @@ Navigation Test
 
     sleep    3
 
+#    Open Browser = Start new browser
+#    Go To = Move to another page in same browser
+
 
 
 
